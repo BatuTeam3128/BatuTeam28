@@ -1,3 +1,27 @@
+import sys
+import requests
+from colorama import Fore, init
+init(autoreset=True)
+
+def api_kontrol():
+    try:
+        url = "https://raw.githubusercontent.com/BatuTeam2831/lisanskontrol/main/durum.txt"
+        response = requests.get(url, timeout=5)
+        if response.text.strip().upper() != "ACIK":
+            print(Fore.RED + "[×] APİ KAPANDI ALMAK İÇİN ~ :) @BatuX28")
+            sys.exit()
+    except:
+        print(Fore.RED + "[×] APİ HATASI")
+        sys.exit()
+
+api_kontrol()
+
+# Tool devamı burada başlar
+print(Fore.GREEN + "[✓] SÜRELİ APİ AKTİF TOOL AÇILIYOR...")
+
+
+
+
 s = input
 X = int
 W = open
