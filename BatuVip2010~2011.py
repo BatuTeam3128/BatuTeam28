@@ -136,7 +136,7 @@ def Users():
 
 
 threads = []
-for _ in range(100):
+for _ in range(20):
     t = threading.Thread(target=lambda: [Users() for _ in range(1000)])
     t.start()
     threads.append(t)
