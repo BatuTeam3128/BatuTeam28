@@ -6,19 +6,20 @@ init(autoreset=True)
 
 def api_kontrol():
     try:
-        url = "https://raw.githubusercontent.com/BatuTeam2831/lisanskontrol/main/durum.txt"
+        url = "https://raw.githubusercontent.com/BatuTeam3128/BatuTeam28/main/durum.txt"
         response = requests.get(url, timeout=5)
-        if response.text.strip().upper() != "ACIK":
-            print(Fore.RED + "[×] APİ KAPANDI ALMAK İÇİN ~ :) @BatuX28")
+        durum = response.text.strip().upper()
+        if durum != "ACIK":
+            print(Fore.RED + "[×] API KAPALI! Satın almak için @BatuX28 ile iletişime geç.")
             sys.exit()
-    except:
-        print(Fore.RED + "[×] APİ HATASI")
+    except requests.exceptions.RequestException:
+        print(Fore.RED + "[×] API HATASI! Bağlantı kurulamadı.")
         sys.exit()
 
 api_kontrol()
 
-# Tool devamı burada başlar
-print(Fore.GREEN + "[✓] SÜRELİ APİ AKTİF TOOL AÇILIYOR...")
+# Tool devamı buradan başlar
+print(Fore.GREEN + "[✓] API AKTİF. Tool başlatılıyor...")
 
 
 
