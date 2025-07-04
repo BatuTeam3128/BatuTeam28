@@ -109,8 +109,9 @@ def check(username, pasw):
         else:
             os.system('cls' if os.name == 'nt' else 'clear')
             z += 1
-            print(f"{Fore.GREEN} Hits{Fore.WHITE}: {u} // {Fore.RED}Bad{Fore.WHITE}: {z} // {Fore.YELLOW}Retries{Fore.WHITE}: {j}\n")
-
+            print(f"{Fore.CYAN}┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓")
+print(f"┃  {Fore.GREEN}✅ Hits   {Fore.WHITE}: {u:<6} {Fore.RED}❌ Bad    {Fore.WHITE}: {z:<6} {Fore.YELLOW}🔁 Hata {Fore.WHITE}: {j:<6} ┃")
+print(f"{Fore.CYAN}┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\n")
     except Exception as e:
         print(f"Hata: {e}")
 
