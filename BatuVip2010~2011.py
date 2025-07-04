@@ -109,9 +109,10 @@ def check(username, pasw):
             os.system('cls' if os.name == 'nt' else 'clear')
             z += 1
             print(f"{Fore.CYAN}┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓")
-print(f"┃  {Fore.GREEN}✅ Hits   {Fore.WHITE}: {u:<6} {Fore.RED}❌ Bad    {Fore.WHITE}: {z:<6} {Fore.YELLOW}🔁 Hata {Fore.WHITE}: {j:<6} ┃")
-print(f"{Fore.CYAN}┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\n")
+            print(f"┃  {Fore.GREEN}✅ Hits   {Fore.WHITE}: {u:<6} {Fore.RED}❌ Bad    {Fore.WHITE}: {z:<6} {Fore.YELLOW}🔁 Hata {Fore.WHITE}: {j:<6} ┃")
+            print(f"{Fore.CYAN}┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\n")
     except Exception as e:
+        j += 1
         print(f"Hata: {e}")
 
 
