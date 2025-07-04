@@ -34,8 +34,6 @@ from asmix import Instagram
 from colorama import Fore, init
 init(autoreset=True)
 
-print(pyfiglet.figlet_format("BatuVip2010-2011Tool")
-
 B="\033[1;30m"; R="\033[1;31m"; G="\033[1;97m"; Y="\033[1;33m"
 Bl="\033[1;34m"; P="\033[1;35m"; C="\033[1;34m"; E="\033[1;33m"
 J="\033[1;31m"; I="\033[1;32m"; H="\x1b[38;5;208m"; M='\x1b[1;37m'
