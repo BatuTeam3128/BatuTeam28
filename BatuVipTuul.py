@@ -1,6 +1,7 @@
-import sys
 import requests
+import sys
 from colorama import Fore, init
+
 init(autoreset=True)
 
 def api_kontrol():
