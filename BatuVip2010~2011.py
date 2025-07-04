@@ -1,3 +1,28 @@
+import requests
+import sys
+from colorama import Fore, init
+
+init(autoreset=True)
+
+def api_kontrol():
+    try:
+        url = "https://raw.githubusercontent.com/BatuTeam3128/BatuTeam28/main/durum1.txt"
+        response = requests.get(url, timeout=5)
+        durum = response.text.strip().upper()
+        if durum != "ACIK":
+            print(Fore.RED + "[×] 2010-2011 INSTAGRAM USER PASS TOOLUN APİSİ KAPANDI SATIN ALMAK İÇİN:) @BatuX28")
+            sys.exit()
+    except requests.exceptions.RequestException:
+        print(Fore.RED + "[×] API HATASI.")
+        sys.exit()
+
+api_kontrol()
+
+# Tool devamı buradan başlar
+print(Fore.GREEN + "[✓] BOLL HİTLİ 2010-2011 INSTAGRAM USER PASS TOOL AKTİF TOOL BAŞLIYOR...")
+
+
+
 import requests, os, random, time, sys, string, json, threading, webbrowser, base64
 from uuid import uuid4
 from concurrent.futures import ThreadPoolExecutor
@@ -83,8 +108,9 @@ def check(username, pasw):
         else:
             os.system('cls' if os.name == 'nt' else 'clear')
             z += 1
-            print(f"{Fore.GREEN} Hits{Fore.WHITE}: {u} // {Fore.RED}Bad{Fore.WHITE}: {z} // {Fore.YELLOW}Retries{Fore.WHITE}: {j}\n")
-
+            print(f"{Fore.CYAN}┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓")
+print(f"┃  {Fore.GREEN}✅ Hits   {Fore.WHITE}: {u:<6} {Fore.RED}❌ Bad    {Fore.WHITE}: {z:<6} {Fore.YELLOW}🔁 Hata {Fore.WHITE}: {j:<6} ┃")
+print(f"{Fore.CYAN}┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\n")
     except Exception as e:
         print(f"Hata: {e}")
 
