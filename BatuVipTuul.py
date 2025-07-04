@@ -316,7 +316,7 @@ def A9(username, domain):
     J = B.get("biography")
 
     if D and E:
-        G = True if X(D) >= 10 and X(E) >= 2 else False
+        G = True if X(D) >= 10 and X(E) >= 0 else False
     else:
         G = False
 
@@ -333,7 +333,7 @@ def A9(username, domain):
 ║ 🧿 𝐆ö𝐧𝐝𝐞𝐫𝐢       : {E}
 ║ 🧿 𝐁𝐢𝐨            : {J}
 ║ 🧿 𝐑𝐞𝐬𝐞𝐭         : {A8(C)}
-║ 🧿 𝐌𝐞𝐭𝐚 𝐇𝐞𝐬𝐚𝐛ı   : {"✅ Aktif" if G else "❌ Pasif"}
+║ 🧿 𝐌𝐞𝐭𝐚 : {"✅ Aktif" if G else "❌ Kapalı"}
 ║                                              
 ╚═════════════ ⌯ @BatuX28 ⌯ @BatuPython028 ═════╝
 """
@@ -354,7 +354,7 @@ def A9(username, domain):
         pass
 
 
-AA = 50
+AA = 10
 
 
 def AB():
