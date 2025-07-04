@@ -10,16 +10,16 @@ def api_kontrol():
         response = requests.get(url, timeout=5)
         durum = response.text.strip().upper()
         if durum != "ACIK":
-            print(Fore.RED + "[×] API KAPALI! Satın almak için @BatuX28 ile iletişime geç.")
+            print(Fore.RED + "[×] BOLL HİTLİ INSTAGRAM TOOLUN APİSİ KAPANDI SATIN ALMAK İÇİN:) @BatuX28 ile iletişime geç.")
             sys.exit()
     except requests.exceptions.RequestException:
-        print(Fore.RED + "[×] API HATASI! Bağlantı kurulamadı.")
+        print(Fore.RED + "[×] API HATASI.")
         sys.exit()
 
 api_kontrol()
 
 # Tool devamı buradan başlar
-print(Fore.GREEN + "[✓] API AKTİF. Tool başlatılıyor...")
+print(Fore.GREEN + "[✓] BOLL HİTLİ INSTAGRAM TOOL AKTİF TOOL BAŞLIYOR...")
 
 
 
