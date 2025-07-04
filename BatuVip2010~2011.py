@@ -28,12 +28,13 @@ import requests, os, random, time, sys, string, json, threading, webbrowser, bas
 from uuid import uuid4
 from concurrent.futures import ThreadPoolExecutor
 from rich.console import Console
-from cfonts import render
+import pyfiglet
 from user_agent import generate_user_agent as uu
 from asmix import Instagram
 from colorama import Fore, init
 init(autoreset=True)
 
+print(pyfiglet.figlet_format("BatuVip2010-2011Tool")
 
 B="\033[1;30m"; R="\033[1;31m"; G="\033[1;97m"; Y="\033[1;33m"
 Bl="\033[1;34m"; P="\033[1;35m"; C="\033[1;34m"; E="\033[1;33m"
