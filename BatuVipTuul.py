@@ -316,7 +316,7 @@ def A9(username, domain):
     J = B.get("biography")
 
     if D and E:
-        G = True if X(D) >= 10 and X(E) >= 0 else False
+        G = True if X(D) >= 10 and X(E) >= 2 else False
     else:
         G = False
 
@@ -384,5 +384,5 @@ def AB():
             pass
 
 
-for _ in K(50):
+for _ in K(150):
     u(target=AB).start()
