@@ -120,11 +120,7 @@ def show_stats():
     bt = bad_insta + bad_email 
     be = good_ig            
      
-    print(f"""
-╔════════════════════╗
-║                        ✅ Hits : {ge:<5}     ║
-║                       ❌ Bads : {bt:<5}     ║
-╚════════════════════╝
+        print(f"""           💣 Hits: {ge} >> • << 💀 Bads: {bt} 
 """)
 
 def update_stats():
@@ -393,7 +389,7 @@ def save_account_info(username, domain):
 📝 𝘽𝙄𝙔𝙊𝙂𝙍𝘼𝙁𝙄: {biography}
 🔓 𝙍𝙀𝙎𝙀𝙏 𝙀𝙈𝘼𝙄𝙇: {recovery_email}
 —————————————————
-🔻 𝙏𝙂 ~ @BatuX28 ~ @BatuKumar_Bot ~ @BatuPython28
+🔻 𝙏𝙂 ~ @BatuX28 ~ @BatuVip_Bot ~ @BatuPython028
 """
         
     try:
