@@ -119,8 +119,8 @@ def show_stats():
     ge = hits               
     bt = bad_insta + bad_email 
     be = good_ig            
-     
-        print(f"""           💣 Hits: {ge} >> • << 💀 Bads: {bt} 
+    
+    print(f"""           💣 Hits: {ge} >> • << 💀 Bads: {bt} 
 """)
 
 def update_stats():
