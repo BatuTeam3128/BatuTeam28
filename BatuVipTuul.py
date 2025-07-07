@@ -393,7 +393,12 @@ def save_account_info(username, domain):
 """
         
     try:
-        requests.get(f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={ID}&text={info_text}")
+        url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
+        params = {
+            "chat_id": ID,
+            "text": message
+        }
+        requests.get(url, params=params)
     except Exception as e:
         print("Telegram mesajı gönderilemedi:", e)
 
