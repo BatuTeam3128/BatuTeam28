@@ -389,7 +389,7 @@ def save_account_info(username, domain):
 📝 𝘽𝙄𝙔𝙊𝙂𝙍𝘼𝙁𝙄: {biography}
 🔓 𝙍𝙀𝙎𝙀𝙏 𝙀𝙈𝘼𝙄𝙇: {recovery_email}
 —————————————————
-🔻 𝙏𝙂 ~ @BatuX28 ~ @BatuVip_Bot ~ @BatuPython028
+🔻 𝙏𝙂 ~ @BatuX28 ~ @BatuVip_Bot
 """
         
     try:
