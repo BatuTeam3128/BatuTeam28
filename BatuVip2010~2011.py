@@ -103,7 +103,7 @@ def check(username, pasw):
 🔐 𝙎𝙞𝙛𝙧𝙚: {pasw}
 🔗 𝙋𝙧𝙤𝙛𝙞𝙡: instagram.com/{username}
 
-👑 𝗕𝗔𝗧𝗨 𝗧𝗘𝗔𝗠 • @BatuX28 | @BatuPython028
+👑 𝗕𝗔𝗧𝗨 𝗧𝗘𝗔𝗠 • @BatuX28 | @BatuVip_Bot
 """)
         else:
             os.system('cls' if os.name == 'nt' else 'clear')
