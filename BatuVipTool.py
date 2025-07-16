@@ -6,7 +6,7 @@ init(autoreset=True)
 
 def api_kontrol():
     try:
-        url = "https://raw.githubusercontent.com/BatuTeam3128/BatuTeam28/main/durum.txt"
+        url = "https://raw.githubusercontent.com/BatuTeam3128/BatuTeam28/main/durum1.txt"
         response = requests.get(url, timeout=5)
         durum = response.text.strip().upper()
         if durum != "ACIK":
