@@ -1,3 +1,27 @@
+import requests
+import sys
+from colorama import Fore, init
+
+init(autoreset=True)
+
+def api_kontrol():
+    try:
+        url = "https://raw.githubusercontent.com/BatuTeam3128/BatuTeam28/main/durum.txt"
+        response = requests.get(url, timeout=5)
+        durum = response.text.strip().upper()
+        if durum != "ACIK":
+            print(Fore.RED + "[×] TİKTOK TOOLUN APİSİ KAPANDI SATIN ALMAK İÇİN:) @BatuX28")
+            sys.exit()
+    except requests.exceptions.RequestException:
+        print(Fore.RED + "[×] API HATASI.")
+        sys.exit()
+
+api_kontrol()
+
+# Tool devamı buradan başlar
+print(Fore.GREEN + "[✓] RANDOM TAKİPÇİLİ TİKTOK TOOL AKTİF TOOL BAŞLIYOR...")
+
+
 
 
 def display_banner():
