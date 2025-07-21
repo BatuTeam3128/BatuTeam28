@@ -1,3 +1,28 @@
+import requests
+import sys
+from colorama import Fore, init
+
+init(autoreset=True)
+
+def api_kontrol():
+    try:
+        url = "https://raw.githubusercontent.com/BatuTeam3128/BatuTeam28/main/durum1.txt"
+        response = requests.get(url, timeout=5)
+        durum = response.text.strip().upper()
+        if durum != "ACIK":
+            print(Fore.RED + "[×] TİKTOK TOOLUN APİSİ KAPANDI SATIN ALMAK İÇİN:) @BatuX28")
+            sys.exit()
+    except requests.exceptions.RequestException:
+        print(Fore.RED + "[×] API HATASI.")
+        sys.exit()
+
+api_kontrol()
+
+# Tool devamı buradan başlar
+print(Fore.GREEN + "[✓] İP BANSIZ TAKİPÇİLİ TİKTOK TOOL AKTİF TOOL BAŞLIYOR...")
+
+
+
 from requests import get,post as pp,Session;from urllib.parse import urlencode;import http.client,os,re,random,string,sys,time,uuid,binascii,json;from random import choice as cc,randrange as rr,randint;from time import sleep,time;import httpx;from user_agent import generate_user_agent as ggb;import telebot;from telebot import types;from uuid import uuid4;import secrets;from datetime import datetime;from bs4 import BeautifulSoup;from ms4 import InfoTik;from cfonts import render,say;from MedoSigner import Argus,Gorgon,md5,Ladon;from concurrent.futures import ThreadPoolExecutor;from threading import Thread;import binascii;import webbrowser
 E='\033[1;31m';Y='\033[1;33m';Z='\033[1;31m';X='\033[1;33m';Z1='\033[2;31m';F='\033[2;32m';A='\033[2;34m';C='\033[2;35m';S='\033[2;36m';G='\033[1;34m';HH='\033[1;34m';M='\x1b[1;37m'#الوان
 from requests import get,post
