@@ -434,7 +434,7 @@ def luffy_shelby():
                     ud = (users['user_info']['uid'])
                     user=(users['user_info']['unique_id'])
                     fol =(users['user_info']['follower_count'])
-                    if int(fol)>=0:
+                    if int(fol)>=10:
                     	pass
                     else:
                     	continue
